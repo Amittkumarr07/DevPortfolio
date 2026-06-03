@@ -9,14 +9,21 @@
 
 /*Primary color*/
 :root {
-  --bg-color: #121358;
-  --text-color: white;
+  --bg-color: #111844;
+  --bh-color1: #121358;
+  --bh-color2: #232F72;
+  --bh-color3: #2F578A;
+  --bh-color4: #36ADA3;
+  --text-color: #F5F5F5;
   --accent-color: #2F578A;
 } 
 [data-theme="light"] {
   --bg-color: #F5F5F5;
-  --text-color: #FF0000;
-  --accent-color: #BBD5DA;
+  --bh-color:#DFF2EB;
+  --bh-color: #B9E5E8;
+  --bh-color: #7AB2D3;
+  --text-color: #4A628A;
+  --accent-color: #5DF8D8;
 }
 body {
   background-color: var(--bg-color);
