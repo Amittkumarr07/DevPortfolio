@@ -1,13 +1,33 @@
-.main {
-  background-color: grey;
-  color: white;
-}
- 
-/*Blinking Cursor*/
+ /*Blinking Cursor*/
 .cursor {
   animation: blink 0.7s infinite;
 }
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
+}
+
+/*Primary color*/
+:root {
+  --bg-color: #121358;
+  --text-color: white;
+  --accent-color: #2F578A;
+} 
+.light-mode {
+  --bg-color: #F5F5F5;
+  --text-color: #FF0000;
+  --accent-color: #BBD5DA;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3 ease, color 0.3 ease;
+  font-family: Arial, Sans-Serif;
+}
+button {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
