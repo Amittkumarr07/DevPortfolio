@@ -35,5 +35,25 @@ function deletingEffect() {
     };
     loopDeleting();
 }
-
 typingEffect();
+
+/*Theme switcher*/
+const toggleButton = document.getElementById('theme-toggle');
+const currentTheme = localStorage.getItem('theme');
+
+// Apply light mode on page load if they chose it before
+if (currentTheme === 'light') {
+  document.documentElement.setAttribute('data-theme', 'light');
+}
+
+toggleButton.addEventListener('click', () => {
+  let theme = document.documentElement.getAttribute('data-theme');
+  
+  if (theme === 'light') {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'dark'); // Reverts to your default dark mode
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
+  }
+});
