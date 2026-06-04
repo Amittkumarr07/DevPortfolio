@@ -19,9 +19,10 @@
 } 
 [data-theme="light"] {
   --bg-color: #F5F5F5;
-  --bh-color:#DFF2EB;
-  --bh-color: #B9E5E8;
-  --bh-color: #7AB2D3;
+  --bh-color1:#DFF2EB;
+  --bh-color2: #B9E5E8;
+  --bh-color3: #7AB2D3;
+  --bh-color4: #5DBFB7;
   --text-color: #4A628A;
   --accent-color: #5DF8D8;
 }
@@ -32,9 +33,13 @@ body {
   font-family: Arial, Sans-Serif;
 }
 button {
-  background-color: var(--accent-color);
+  background-color: var(--bh-color4);
   color: var(--bg-color);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+}
+a {
+ color: var(--bh-color3);
+ text-decoration: none;
 }
